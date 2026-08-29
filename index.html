@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Резюме — Системный аналитик</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            --bg: #f7f8fa;
+            --card: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --accent: #2563eb;
+            --accent-weak: #dbeafe;
+            --border: #e5e7eb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.55;
+            padding: 24px 16px 48px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px 24px 32px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        }
+
+        header {
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--muted);
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            font-size: 14px;
+        }
+
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-top: 24px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 14px 0 6px;
+        }
+
+        p {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        ul {
+            margin: 8px 0 12px 20px;
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .tech-item {
+            background: var(--accent-weak);
+            color: var(--accent);
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .section-muted {
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .achievements li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            margin-top: 28px;
+            font-size: 13px;
+            color: var(--muted);
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 16px 24px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Системный аналитик</h1>
+            <p class="subtitle">
+                Платформенная занятость, подработка рядом с домом для самозанятых<br />
+                Мобильное приложение «МОЯ СМЕНА + бэк‑офис
+            </p>
+            <p class="contact">
+                Проект: <a href="https://моясмена.рф" target="_blank" rel="noopener">моясмена.рф</a>
+                <br />
+                GitHub: <a href="https://github.com/xs1za/cv" target="_blank" rel="noopener">github.com/xs1za/cv</a>
+            </p>
+        </header>
+
+        <section>
+            <h2>О проекте и команде</h2>
+            <p>
+                Продукт: платформенная занятость, подработка рядом с домом для самозанятых через мобильное приложение «МОЯ СМЕНА для самозанятых + бэк‑офис.
+            </p>
+            <p class="section-muted">
+                Команда 20+ человек: релиз‑менеджер, архитектор, тимлид, мобильная разработка (Flutter), фронтенд (Vue), бэкенд (Python + Django + PostgreSQL), QA, DevOps (K8S), владелец продукта, юрист, информационная безопасность, бизнес‑заказчики.
+            </p>
+        </section>
+
+        <section>
+            <h2>Задачи</h2>
+            <ul>
+                <li>
+                    Анализ и формализация бизнес‑процессов AS‑IS / TO‑BE для ключевых сценариев платформы: онбординг самозанятого, верификация, поиск и бронирование подработок, выполнение заданий, табелирование, выплаты, чеки, споры/возвраты.
+                </li>
+                <li>
+                    Анализ и декомпозиция требований бизнеса и продукта, формирование бэклога и приоритизация задач по ценности, рискам и зависимостям между мобильным приложением, бэк‑офисом и внешними системами.
+                </li>
+                <li>
+                    Анализ и проработка интеграций с партнёрами, представляющими 30%+ ритейл‑рынка РФ.
+                </li>
+                <li>
+                    Разработка спецификации API (OpenAPI/Swagger) и контрактов событий для Сервиса Интеграций (СИ) для сценариев: получение заявок, создание заданий/смен, назначение/снятие/замена исполнителя, статусы выполнения заданий/смен, табелирование, оценка исполнителей и магазинов.
+                </li>
+                <li>
+                    Оформление комплектов документации на основе БФТ: постановки на разработку (бизнес‑контекст, ФТ, НФТ, критерии приёмки), спецификации интеграций, сценарии тестирования; инструкции для поддержки и операционной команды; поддержка актуальности базы знаний (Yandex Wiki, EvaTeam Wiki).
+                </li>
+                <li>
+                    Координация разработки и тестирования мобильной и серверной части: постановка задач разработчикам BE и FE, визуализация макетов новых элементов интерфейсов, сопровождение QA, участие в ревью системных требований и постановок, тест‑кейсов, UAT и приёмке функциональности; авторский контроль, презентация решений бизнес‑заказчикам, обучение пользователей новому функционалу.
+                </li>
+                <li>
+                    Контроль мониторинга и алертинга по ключевым техническим метрикам платформы: загруженность очередей событий, анализ аномалий и принятие решений о системности ошибок с последующей классификацией их как инцидентов, ошибок реализации в коде или временных сбоев, устраняемых повторной обработкой.
+                </li>
+                <li>
+                    Собеседование и менторство младших аналитиков: ревью спецификаций, обучение работе с внутренними системами инфраструктуры компании (инструменты анализа данных и проектирования решений), стандартам документации и коммуникации с бизнесом и внешними партнёрами.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Достижения по надёжности и операционной эффективности</h2>
+            <ul class="achievements">
+                <li>
+                    Сократил время информирования о факторах риска потерь смен/заданий (ключевой бизнес‑объект платформы) по причине недоступности/нестабильности интеграций с внешними системами: определил и дифференцировал бизнес‑метрики, которые DevOps‑инженеры вынесли в отдельные каналы алертинга для ответственных сотрудников, что позволило раньше выявлять критические ситуации и снижать влияние на бизнес‑процессы.
+                </li>
+                <li>
+                    Сократил время формирования оперативных отчётов с 1 часа до 1 минуты за счёт отказа от подсистемы Django (генерация XLS) и перевода всех ёмких отчётов на Metabase, подключённую к реплике боевой БД; это ускорило получение оперативных данных и повысило скорость модификации отчётов по запросам бизнеса.
+                </li>
+                <li>
+                    Повысил долю успешно получаемых смен/заданий с 90% до 95% за счёт внедрения классификации инцидентов, настройки алертов в Grafana/Sentry и доработки сценариев повторной обработки событий; количество production‑инцидентов снизилось на ~30%.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Технологии и инструменты</h2>
+
+            <h3>Моделирование и документация</h3>
+            <div class="tech-list">
+                <span class="tech-item">OpenAPI/Swagger</span>
+                <span class="tech-item">Postman</span>
+                <span class="tech-item">Axure</span>
+                <span class="tech-item">UML</span>
+                <span class="tech-item">Yandex Wiki</span>
+                <span class="tech-item">EvaTeam Wiki</span>
+            </div>
+
+            <h3>Интеграции</h3>
+            <div class="tech-list">
+                <span class="tech-item">REST API</span>
+                <span class="tech-item">OAuth2</span>
+                <span class="tech-item">webhook</span>
+                <span class="tech-item">polling</span>
+                <span class="tech-item">SFTP</span>
+                <span class="tech-item">Spyne</span>
+            </div>
+
+            <h3>Трекинг и планирование</h3>
+            <div class="tech-list">
+                <span class="tech-item">Redmine</span>
+                <span class="tech-item">Git</span>
+                <span class="tech-item">GitLab</span>
+                <span class="tech-item">GitLab Wiki</span>
+            </div>
+
+            <h3>Данные и анализ</h3>
+            <div class="tech-list">
+                <span class="tech-item">SQL</span>
+                <span class="tech-item">PostgreSQL</span>
+                <span class="tech-item">Metabase</span>
+                <span class="tech-item">Kibana</span>
+                <span class="tech-item">OpenSearch</span>
+                <span class="tech-item">Jaeger</span>
+                <span class="tech-item">Sentry</span>
+                <span class="tech-item">Grafana</span>
+                <span class="tech-item">K8S</span>
+            </div>
+        </section>
+
+        <footer>
+            Резюме подготовлено для публикации на GitHub Pages.
+        </footer>
+    </div>
+</body>
+</html>
