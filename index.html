@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
-    <title>Резюме — Системный аналитик</title>
+    <title>Резюме - Системный аналитик</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         :root {
@@ -126,6 +126,34 @@
             margin-bottom: 8px;
         }
 
+        .job {
+            margin-bottom: 16px;
+        }
+
+        .job-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+
+        .job-title {
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .job-company {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .job-period {
+            color: var(--muted);
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
         footer {
             margin-top: 28px;
             font-size: 13px;
@@ -145,158 +173,418 @@
             h2 {
                 font-size: 16px;
             }
+
+            .job-header {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Системный аналитик</h1>
+            <h1>Дмитрий Комяков</h1>
             <p class="subtitle">
-                Платформенная занятость, подработка рядом с домом для самозанятых<br />
-                Мобильное приложение "МОЯ СМЕНА" + бэк‑офис
+                Системный аналитик<br />
+                Домены: Платформенная занятость, CRM, Биржа, Автоматизация предприятий
             </p>
             <p class="contact">
-                Проект: <a href="https://моясмена.рф" target="_blank" rel="noopener">моясмена.рф</a>
+                Витебск, Беларусь<br />
                 <br />
-                HH: <a href="https://hh.ru/resume/cae0c092ff05b6b0d60039ed1f4b7452583449" target="_blank" rel="noopener">Резюме на сайте HH.ru</a>
-                <br />
-                Linkedin: <a href="https://www.linkedin.com/in/kdnit/" target="_blank" rel="noopener">Резюме на сайте Linkedin</a>
-                <br />
-                GitHub CV: <a href="https://xs1za.github.io/cv/" target="_blank" rel="noopener">Резюме на сайте GitHub</a>
-                <br />
-                GitHub profile: <a href="https://github.com/xs1za" target="_blank" rel="noopener">Профиль на сайте GitHub</a>
-                <br />
-<!-- Ссылка-заглушка. Роботы не должны увидеть email -->
-<a href="#" id="secure-email">Загрузка контактов...</a>
-
-<script>
-  (function() {
-    // 1. Разбиваем email на части, чтобы боты не нашли его поиском по строке
-    const user = "dmitry.k8";
-    const domain = "gmail";
-    const tld = "com";
-    
-    // 2. Находим нашу ссылку по ID
-    const emailLink = document.getElementById("secure-email");
-    
-    // 3. Собираем полный адрес
-    const fullEmail = `${user}@${domain}.${tld}`;
-    
-    // 4. Динамически меняем атрибуты ссылки для пользователя
-    emailLink.href = `mailto:${fullEmail}`;
-    emailLink.textContent = fullEmail;
-  })();
-</script>
-                <br />
-                Telegram: @xs3za
-                <br />
+                Email: <a href="#" id="secure-email">Загрузка контактов...</a><br />
+                Telegram: <a href="https://t.me/xs3za" target="_blank" rel="noopener">@xs3za</a><br />
+                LinkedIn: <a href="https://www.linkedin.com/in/kdnit/" target="_blank" rel="noopener">linkedin.com/in/kdnit</a><br />
+                GitHub CV: <a href="https://xs1za.github.io/cv/" target="_blank" rel="noopener">xs1za.github.io/cv</a><br />
+                GitHub Profile: <a href="https://github.com/xs1za" target="_blank" rel="noopener">github.com/xs1za</a><br />
+                Max.ru: <a href="https://max.ru/u/f9LHodD0cOL7peNOrMjWd_ydrdvSzgHz3tJhE8arNW0Yw2wBd_Hkb9vJWjM" target="_blank" rel="noopener">max.ru/profile</a>
             </p>
         </header>
 
         <section>
-            <h2>О проекте и команде</h2>
-            <p>
-                Продукт: платформенная занятость, подработка рядом с домом для самозанятых через мобильное приложение "МОЯ СМЕНА" для самозанятых + бэк‑офис.
-            </p>
-            <p class="section-muted">
-                Команда 20+ человек: релиз‑менеджер, архитектор, тимлид, мобильная разработка (Flutter), фронтенд (Vue), бэкенд (Python + Django + PostgreSQL), QA, DevOps (K8S), владелец продукта, юрист, информационная безопасность, бизнес‑заказчики.
-            </p>
+            <h2>Ключевой проект (последние 3 года)</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Старший системный аналитик</span>
+                        <span class="job-company"> — Верме, Москва</span>
+                    </div>
+                    <span class="job-period">Сентябрь 2023 — настоящее время</span>
+                </div>
+                <p>
+                    Продукт: платформенная занятость, подработка рядом с домом для самозанятых через мобильное приложение «МОЯ СМЕНА для самозанятых + бэк‑офис.<br />
+                    Проект: <a href="https://моясмена.рф" target="_blank" rel="noopener">моясмена.рф</a>
+                </p>
+                <p class="section-muted">
+                    Команда 20+ человек: релиз‑менеджер, архитектор, тимлид, мобильная разработка (Flutter), фронтенд (Vue), бэкенд (Python + Django + PostgreSQL), QA, DevOps (K8S), владелец продукта, юрист, информационная безопасность, бизнес‑заказчики.
+                </p>
+                <h3>Задачи</h3>
+                <ul>
+                    <li>
+                        Анализ и формализация бизнес‑процессов AS‑IS / TO‑BE для ключевых сценариев платформы: онбординг самозанятого, верификация, поиск и бронирование подработок, выполнение заданий, табелирование, выплаты, чеки, споры/возвраты.
+                    </li>
+                    <li>
+                        Анализ и декомпозиция требований бизнеса и продукта, формирование бэклога и приоритизация задач по ценности, рискам и зависимостям между мобильным приложением, бэк‑офисом и внешними системами.
+                    </li>
+                    <li>
+                        Анализ и проработка интеграций с партнёрами, представляющими 30%+ ритейл‑рынка РФ.
+                    </li>
+                    <li>
+                        Разработка спецификации API (OpenAPI/Swagger) и контрактов событий для Сервиса Интеграций (СИ) для сценариев: получение заявок, создание заданий/смен, назначение/снятие/замена исполнителя, статусы выполнения заданий/смен, табелирование, оценка исполнителей и магазинов.
+                    </li>
+                    <li>
+                        Оформление комплектов документации на основе БФТ: постановки на разработку (бизнес‑контекст, ФТ, НФТ, критерии приёмки), спецификации интеграций, сценарии тестирования; инструкции для поддержки и операционной команды; поддержка актуальности базы знаний (Yandex Wiki, EvaTeam Wiki).
+                    </li>
+                    <li>
+                        Координация разработки и тестирования мобильной и серверной части: постановка задач разработчикам BE и FE, визуализация макетов новых элементов интерфейсов, сопровождение QA, участие в ревью системных требований и постановок, тест‑кейсов, UAT и приёмке функциональности; авторский контроль, презентация решений бизнес‑заказчикам, обучение пользователей новому функционалу.
+                    </li>
+                    <li>
+                        Контроль мониторинга и алертинга по ключевым техническим метрикам платформы: загруженность очередей событий, анализ аномалий и принятие решений о системности ошибок с последующей классификацией их как инцидентов, ошибок реализации в коде или временных сбоев, устраняемых повторной обработкой.
+                    </li>
+                    <li>
+                        Собеседование и менторство младших аналитиков: ревью спецификаций, обучение работе с внутренними системами инфраструктуры компании (инструменты анализа данных и проектирования решений), стандартам документации и коммуникации с бизнесом и внешними партнёрами.
+                    </li>
+                </ul>
+                <h3>Достижения</h3>
+                <ul class="achievements">
+                    <li>
+                        Сократил время информирования о факторах риска потерь смен/заданий по причине недоступности/нестабильности интеграций: определил и дифференцировал бизнес‑метрики, вынесенные DevOps в отдельные каналы алертинга, что позволило раньше выявлять критические ситуации.
+                    </li>
+                    <li>
+                        Сократил время формирования оперативных отчётов с 1 часа до 1 минуты за счёт перевода ёмких отчётов с Django (XLS) на Metabase (реплика боевой БД).
+                    </li>
+                    <li>
+                        Повысил долю успешно получаемых смен/заданий с 90% до 95% за счёт классификации инцидентов, настройки алертов в Grafana/Sentry и доработки сценариев повторной обработки; количество production‑инцидентов снизилось на ~30%.
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section>
-            <h2>Задачи</h2>
+            <h2>Опыт работы</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Бизнес‑аналитик</span>
+                        <span class="job-company"> — ООО ДримСофт, Витебск</span>
+                    </div>
+                    <span class="job-period">Апрель 2023 — Сентябрь 2023 (6 месяцев)</span>
+                </div>
+                <p>Проект автоматизации промышленных предприятий. Бизнес‑аналитик и системный аналитик.</p>
+                <h3>Задачи</h3>
+                <ul>
+                    <li>Коммуникация с заказчиками и разработчиками, определение бизнес‑потребностей.</li>
+                    <li>Сбор, анализ и документирование требований, декомпозиция требований.</li>
+                    <li>Выработка технического решения совместно с архитектором, верификация и валидация требований.</li>
+                    <li>Сопровождение команд разработки и тестирования.</li>
+                    <li>Разработка и оформление документации: Project vision and scope, BRD, SRS, FRS, UC, US, BPMN 2.0, UML.</li>
+                </ul>
+                <h3>Технологии и инструменты</h3>
+                <div class="tech-list">
+                    <span class="tech-item">Draw.io</span>
+                    <span class="tech-item">Camunda Modeler</span>
+                    <span class="tech-item">SoapUI</span>
+                    <span class="tech-item">Postman</span>
+                    <span class="tech-item">Visio</span>
+                    <span class="tech-item">Axure</span>
+                    <span class="tech-item">Битрикс24</span>
+                    <span class="tech-item">xWiki</span>
+                    <span class="tech-item">GitLab</span>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Руководитель проектов</span>
+                        <span class="job-company"> — ДримСофт, Витебск</span>
+                    </div>
+                    <span class="job-period">Апрель 2022 — Март 2023 (1 год)</span>
+                </div>
+                <p>Внешние и внутренние проекты компании. Руководство тремя проектами: CRM‑система, сайт биржи, автоматизация промышленных предприятий.</p>
+                <h3>Задачи</h3>
+                <ul>
+                    <li>Коммуникация с заказчиками и командами разработки.</li>
+                    <li>Создание ТЗ, формирование команд (частичная/полная загрузка).</li>
+                    <li>Составление отчётности по проекту.</li>
+                </ul>
+                <h3>Технологии и инструменты</h3>
+                <div class="tech-list">
+                    <span class="tech-item">Битрикс24</span>
+                    <span class="tech-item">GitLab</span>
+                    <span class="tech-item">xWiki</span>
+                    <span class="tech-item">Trello</span>
+                    <span class="tech-item">Figma</span>
+                    <span class="tech-item">Jira</span>
+                    <span class="tech-item">Draw.io</span>
+                    <span class="tech-item">Yandex Tracker</span>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Руководитель IT‑отдела</span>
+                        <span class="job-company"> — ООО «МОДЕРН‑ЭКСПО, Витебск</span>
+                    </div>
+                    <span class="job-period">Февраль 2019 — Апрель 2022 (3 года 3 месяца)</span>
+                </div>
+                <p>Обеспечение безопасной и безотказной работы цифровой инфраструктуры предприятия.</p>
+                <h3>Задачи</h3>
+                <ul>
+                    <li>Проектирование и построение сетевой инфраструктуры, управление серверами.</li>
+                    <li>Работа с электронными системами документооборота, ведения проектов и задач: Битрикс24, Wrike, 1С ERP.</li>
+                </ul>
+                <h3>Технологии и инструменты</h3>
+                <div class="tech-list">
+                    <span class="tech-item">PROXMOX</span>
+                    <span class="tech-item">VMWare</span>
+                    <span class="tech-item">colocation</span>
+                    <span class="tech-item">cloud service</span>
+                    <span class="tech-item">hosting</span>
+                    <span class="tech-item">MikroTik</span>
+                    <span class="tech-item">PaloAlto</span>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Бизнес‑аналитик</span>
+                        <span class="job-company"> — ДримСофт, Витебск</span>
+                    </div>
+                    <span class="job-period">Сентябрь 2018 — Январь 2019 (5 месяцев)</span>
+                </div>
+                <p>Внешний проект компании.</p>
+                <h3>Задачи</h3>
+                <ul>
+                    <li>Проведение мозговых штурмов с архитектором и командой, фиксация результатов встреч и согласование изменений у заказчика.</li>
+                    <li>Планирование работ, взаимодействие с системным аналитиком.</li>
+                    <li>Создание концептуального дизайна.</li>
+                    <li>Написание SRS для разработки и модификации ПО (описание бизнес‑процессов AS‑IS и TO‑BE).</li>
+                </ul>
+                <h3>Технологии и инструменты</h3>
+                <div class="tech-list">
+                    <span class="tech-item">Jira</span>
+                    <span class="tech-item">Confluence</span>
+                    <span class="tech-item">Diagrams.net</span>
+                    <span class="tech-item">Oracle DB</span>
+                    <span class="tech-item">PL/SQL</span>
+                    <span class="tech-item">Borland Developer Studio 2006</span>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Руководитель ИТ‑подразделения</span>
+                        <span class="job-company"> — Flores De America, Россия</span>
+                    </div>
+                    <span class="job-period">Февраль 2006 — Июль 2018 (12 лет 6 месяцев)</span>
+                </div>
+                <p>Разработка комплекса ПО для автоматизации всех уровней цветочного бизнеса: от управления плантацией до розничных продаж. Бизнес‑ и системный аналитик, руководитель проектов, разработчик.</p>
+                <h3>Задачи</h3>
+                <ul>
+                    <li>Коммуникация с разработчиками и заказчиками, сбор и анализ требований, поиск и анализ вариантов решения.</li>
+                    <li>Декомпозиция требований, оценка затрат и приоритизация.</li>
+                    <li>Написание спецификаций (AS‑IS / TO‑BE), постановка задач команде (Agile/Kanban, UC/US).</li>
+                    <li>Разработка ПО на C++ с запросами PL/SQL (модуль инвентаризации — собственная разработка).</li>
+                    <li>Сопровождение задач на этапах разработки, тестирования и после релиза.</li>
+                </ul>
+                <h3>Технологии и инструменты</h3>
+                <div class="tech-list">
+                    <span class="tech-item">Borland C++</span>
+                    <span class="tech-item">Oracle DB</span>
+                    <span class="tech-item">PL/SQL</span>
+                    <span class="tech-item">MySQL</span>
+                    <span class="tech-item">Oracle Linux</span>
+                    <span class="tech-item">Solaris</span>
+                    <span class="tech-item">Windows Server</span>
+                    <span class="tech-item">SVN</span>
+                    <span class="tech-item">Git</span>
+                    <span class="tech-item">PHP</span>
+                    <span class="tech-item">HTML</span>
+                    <span class="tech-item">Bitrix24</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Образование</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Государственный технический университет им. П.О. Сухого, Гомель</span>
+                    </div>
+                    <span class="job-period">2003</span>
+                </div>
+                <p>Автоматики и электромеханики, автоматизированный электропривод (аспирантура).</p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Государственный технический университет им. П.О. Сухого, Гомель</span>
+                    </div>
+                    <span class="job-period">1999</span>
+                </div>
+                <p>Автоматики и электромеханики, автоматизированный электропривод (высшее).</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Повышение квалификации</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Дальневосточный федеральный университет, Дальневосточный Центр онлайн-обучения</span>
+                    </div>
+                    <span class="job-period">2022</span>
+                </div>
+                <p>Основы баз данных и SQL запросов. 144 академических часа / 4 зачётных единицы</p>
+            </div>
+        </section>
+        <section>
+            <h2>Курсы</h2>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Программирование на Python</span>
+                        <span class="job-company"> — ООО «Институт биоинформатики и биостатистики, Stepik</span>
+                    </div>
+                    <span class="job-period">2026</span>
+                </div>
+                <p>Сертификат: <a href="https://stepik.org/cert/3328138" target="_blank" rel="noopener">stepik.org/cert/3328138</a></p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Microservice Architecture (Микросервисная архитектура)</span>
+                        <span class="job-company"> — OTUS</span>
+                    </div>
+                    <span class="job-period">2025</span>
+                </div>
+                <p>Сертификат: <a href="https://otus.ru/certificate/bb3746f248ee4578a0c94b480e394ab7/" target="_blank" rel="noopener">otus.ru/certificate/...</a></p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Бизнес‑анализ</span>
+                        <span class="job-company"> — ООО ДримСофт</span>
+                    </div>
+                    <span class="job-period">2023</span>
+                </div>
+                <p>Сертификат: <a href="https://drive.google.com/file/d/1PDf2VpiaaEHCkTg22MTW6IB8sYa-XhP4/view?usp=sharing" target="_blank" rel="noopener">Google Drive</a></p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Проектирование архитектуры и интеграций (API, брокеры) + ИИ</span>
+                        <span class="job-company"> — ООО «Цифровые образовательные решения, Stepik</span>
+                    </div>
+                    <span class="job-period">2023</span>
+                </div>
+                <p>Сертификат: <a href="https://stepik.org/cert/2143549" target="_blank" rel="noopener">stepik.org/cert/2143549</a></p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Расширенные возможности SQL</span>
+                        <span class="job-company"> — Дальневосточный федеральный университет, Stepik</span>
+                    </div>
+                    <span class="job-period">2022</span>
+                </div>
+                <p>Сертификат: <a href="https://stepik.org/cert/1413510" target="_blank" rel="noopener">stepik.org/cert/1413510</a></p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Интерактивный тренажёр по SQL</span>
+                        <span class="job-company"> — Дальневосточный федеральный университет, Stepik</span>
+                    </div>
+                    <span class="job-period">2021</span>
+                </div>
+                <p>Сертификат: <a href="https://stepik.org/cert/1193832" target="_blank" rel="noopener">stepik.org/cert/1193832</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Навыки</h2>
+
+            <h3>Технические навыки</h3>
             <ul>
-                <li>
-                    Анализ и формализация бизнес‑процессов AS‑IS / TO‑BE для ключевых сценариев платформы: онбординг самозанятого, верификация, поиск и бронирование подработок, выполнение заданий, табелирование, выплаты, чеки, споры/возвраты.
-                </li>
-                <li>
-                    Анализ и декомпозиция требований бизнеса и продукта, формирование бэклога и приоритизация задач по ценности, рискам и зависимостям между мобильным приложением, бэк‑офисом и внешними системами.
-                </li>
-                <li>
-                    Анализ и проработка интеграций с партнёрами, представляющими 30%+ ритейл‑рынка РФ.
-                </li>
-                <li>
-                    Разработка спецификации API (OpenAPI/Swagger) и контрактов событий для Сервиса Интеграций (СИ) для сценариев: получение заявок, создание заданий/смен, назначение/снятие/замена исполнителя, статусы выполнения заданий/смен, табелирование, оценка исполнителей и магазинов.
-                </li>
-                <li>
-                    Оформление комплектов документации на основе БФТ: постановки на разработку (бизнес‑контекст, ФТ, НФТ, критерии приёмки), спецификации интеграций, сценарии тестирования; инструкции для поддержки и операционной команды; поддержка актуальности базы знаний (Yandex Wiki, EvaTeam Wiki).
-                </li>
-                <li>
-                    Координация разработки и тестирования мобильной и серверной части: постановка задач разработчикам BE и FE, визуализация макетов новых элементов интерфейсов, сопровождение QA, участие в ревью системных требований и постановок, тест‑кейсов, UAT и приёмке функциональности; авторский контроль, презентация решений бизнес‑заказчикам, обучение пользователей новому функционалу.
-                </li>
-                <li>
-                    Контроль мониторинга и алертинга по ключевым техническим метрикам платформы: загруженность очередей событий, анализ аномалий и принятие решений о системности ошибок с последующей классификацией их как инцидентов, ошибок реализации в коде или временных сбоев, устраняемых повторной обработкой.
-                </li>
-                <li>
-                    Собеседование и менторство младших аналитиков: ревью спецификаций, обучение работе с внутренними системами инфраструктуры компании (инструменты анализа данных и проектирования решений), стандартам документации и коммуникации с бизнесом и внешними партнёрами.
-                </li>
+                <li>СУБД: PostgreSQL, Oracle, MySQL, MS SQL.</li>
+                <li>Язык запросов: SQL. Знание принципов ООП.</li>
+                <li>Технологии и сервисы: REST API, SOAP, gRPC, ESB, ETL.</li>
+                <li>Инструментарий: Postman, SoapUI, xWiki, Figma, Jira, Draw.io, Embarcadero RAD Studio, PL/SQL Developer, XMLSpy.</li>
+                <li>Проектирование: Camunda Modeler, Axure, Visio, Draw.io, Erwin Data Modeler.</li>
+                <li>Управление проектами/задачами: Redmine PDM, Atlassian Jira & Confluence, Wrike, Битрикс24, Yandex Tracker.</li>
+                <li>Системы контроля версий: Git, GitLab.</li>
+                <li>ОС: Windows, Linux, Android, iOS.</li>
             </ul>
-        </section>
 
-        <section>
-            <h2>Достижения по надёжности и операционной эффективности</h2>
-            <ul class="achievements">
-                <li>
-                    Сократил время информирования о факторах риска потерь смен/заданий (ключевой бизнес‑объект платформы) по причине недоступности/нестабильности интеграций с внешними системами: определил и дифференцировал бизнес‑метрики, которые DevOps‑инженеры вынесли в отдельные каналы алертинга для ответственных сотрудников, что позволило раньше выявлять критические ситуации и снижать влияние на бизнес‑процессы.
-                </li>
-                <li>
-                    Сократил время формирования оперативных отчётов с 1 часа до 1 минуты за счёт отказа от подсистемы Django (генерация XLS) и перевода всех ёмких отчётов на Metabase, подключённую к реплике боевой БД; это ускорило получение оперативных данных и повысило скорость модификации отчётов по запросам бизнеса.
-                </li>
-                <li>
-                    Повысил долю успешно получаемых смен/заданий с 90% до 95% за счёт внедрения классификации инцидентов, настройки алертов в Grafana/Sentry и доработки сценариев повторной обработки событий; количество production‑инцидентов снизилось на ~30%.
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Технологии и инструменты</h2>
-
-            <h3>Моделирование и документация</h3>
+            <h3>Ключевые технологии</h3>
             <div class="tech-list">
-                <span class="tech-item">OpenAPI/Swagger</span>
-                <span class="tech-item">Postman</span>
-                <span class="tech-item">Axure</span>
-                <span class="tech-item">UML</span>
-                <span class="tech-item">Yandex Wiki</span>
-                <span class="tech-item">EvaTeam Wiki</span>
-            </div>
-
-            <h3>Интеграции</h3>
-            <div class="tech-list">
+                <span class="tech-item">Oracle PL/SQL</span>
+                <span class="tech-item">PostgreSQL</span>
+                <span class="tech-item">SQL</span>
                 <span class="tech-item">REST API</span>
-                <span class="tech-item">OAuth2</span>
-                <span class="tech-item">webhook</span>
-                <span class="tech-item">polling</span>
-                <span class="tech-item">SFTP</span>
-                <span class="tech-item">Spyne</span>
-            </div>
-
-            <h3>Трекинг и планирование</h3>
-            <div class="tech-list">
-                <span class="tech-item">Redmine</span>
+                <span class="tech-item">SOAP</span>
+                <span class="tech-item">gRPC</span>
+                <span class="tech-item">ESB</span>
+                <span class="tech-item">ETL</span>
+                <span class="tech-item">BPMN</span>
+                <span class="tech-item">UML</span>
+                <span class="tech-item">PlantUML</span>
+                <span class="tech-item">OpenAPI/Swagger</span>
+                <span class="tech-item">JSON</span>
+                <span class="tech-item">XML</span>
+                <span class="tech-item">WSDL</span>
+                <span class="tech-item">Agile</span>
+                <span class="tech-item">Kanban</span>
+                <span class="tech-item">User Story</span>
+                <span class="tech-item">Битрикс24</span>
+                <span class="tech-item">Jira</span>
+                <span class="tech-item">Confluence</span>
                 <span class="tech-item">Git</span>
                 <span class="tech-item">GitLab</span>
-                <span class="tech-item">GitLab Wiki</span>
+                <span class="tech-item">Postman</span>
+                <span class="tech-item">SoapUI</span>
+                <span class="tech-item">Draw.io</span>
+                <span class="tech-item">Axure</span>
+                <span class="tech-item">Visio</span>
+                <span class="tech-item">Camunda Modeler</span>
+                <span class="tech-item">Erwin Data Modeler</span>
+                <span class="tech-item">Windows Server</span>
+                <span class="tech-item">Linux</span>
+                <span class="tech-item">Микросервисная архитектура</span>
             </div>
+        </section>
 
-            <h3>Данные и анализ</h3>
-            <div class="tech-list">
-                <span class="tech-item">SQL</span>
-                <span class="tech-item">PostgreSQL</span>
-                <span class="tech-item">Metabase</span>
-                <span class="tech-item">Kibana</span>
-                <span class="tech-item">OpenSearch</span>
-                <span class="tech-item">Jaeger</span>
-                <span class="tech-item">Sentry</span>
-                <span class="tech-item">Grafana</span>
-                <span class="tech-item">K8S</span>
-            </div>
+        <section>
+            <h2>Дополнительная информация</h2>
+            <p>
+                В наличии ИНН РФ и СНИЛС РФ.
+            </p>
+            <p>
+                Рекомендации по запросу.
+            </p>
         </section>
 
         <footer>
-            Резюме для GitHub Pages.
+            Резюме для GitHub Pages..
         </footer>
     </div>
+
+    <script>
+        (function() {
+            const user = "dmitry.k8";
+            const domain = "gmail";
+            const tld = "com";
+            const emailLink = document.getElementById("secure-email");
+            const fullEmail = `${user}@${domain}.${tld}`;
+            emailLink.href = `mailto:${fullEmail}`;
+            emailLink.textContent = fullEmail;
+        })();
+    </script>
 </body>
 </html>
