@@ -159,11 +159,37 @@
             <p class="contact">
                 Проект: <a href="https://моясмена.рф" target="_blank" rel="noopener">моясмена.рф</a>
                 <br />
-                GitHub: <a href="https://github.com/xs1za/cv" target="_blank" rel="noopener">github.com/xs1za/cv</a>
+                HH: <a href="https://hh.ru/resume/cae0c092ff05b6b0d60039ed1f4b7452583449" target="_blank" rel="noopener">Резюме на сайте HH.ru</a>
                 <br />
-                Linkedin: <a href="https://www.linkedin.com/in/kdnit/" target="_blank" rel="noopener">Дмитрий Комяков</a>
+                Linkedin: <a href="https://www.linkedin.com/in/kdnit/" target="_blank" rel="noopener">Резюме на сайте Linkedin</a>
                 <br />
-                email: dmitry.k8@gmail.com
+                GitHub CV: <a href="https://xs1za.github.io/cv/" target="_blank" rel="noopener">Резюме на сайте GitHub</a>
+                <br />
+                GitHub profile: <a href="https://github.com/xs1za" target="_blank" rel="noopener">Профиль на сайте GitHub</a>
+                <br />
+<!-- Ссылка-заглушка. Роботы не должны увидеть email -->
+<a href="#" id="secure-email">Загрузка контактов...</a>
+
+<script>
+  (function() {
+    // 1. Разбиваем email на части, чтобы боты не нашли его поиском по строке
+    const user = "dmitry.k8";
+    const domain = "gmail";
+    const tld = "com";
+    
+    // 2. Находим нашу ссылку по ID
+    const emailLink = document.getElementById("secure-email");
+    
+    // 3. Собираем полный адрес
+    const fullEmail = `${user}@${domain}.${tld}`;
+    
+    // 4. Динамически меняем атрибуты ссылки для пользователя
+    emailLink.href = `mailto:${fullEmail}`;
+    emailLink.textContent = fullEmail;
+  })();
+</script>
+                <br />
+                Telegram: @xs3za
                 <br />
             </p>
         </header>
