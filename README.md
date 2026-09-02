@@ -1,3 +1,5 @@
 # cv
-Resume Dmitry Komiakov
-Резюме Дмитрий Комяков
+
+Resume Dmitry Komiakov system analyst
+
+Резюме Дмитрий Комяков системный аналитик
